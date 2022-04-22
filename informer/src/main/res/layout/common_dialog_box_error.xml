@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"> <!--Used to display Big Enough Layout for Dialog.-->
-
+    android:orientation="vertical"
+    android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -15,11 +15,11 @@
             android:layout_height="match_parent"
             style="@style/MyRounded.MaterialComponents.MaterialAlertDialog"
             android:orientation="vertical"
-            android:background="@color/pink">
+            android:background="@color/red">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:background="@color/greenLight"
+                android:background="@color/red"
                 android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -29,9 +29,9 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="46dp"
-                        android:background="@color/greenLight"
+                        android:background="@color/red"
                         android:padding="5dp"
-                        android:src="@drawable/success"></ImageView>
+                        android:src="@drawable/error"></ImageView>
                     <TextView
                         android:id="@+id/successTitle"
                         android:layout_width="match_parent"
@@ -40,8 +40,8 @@
                         android:gravity="center_horizontal"
                         android:padding="12sp"
                         android:textSize="16sp"
-                        android:background="@color/greenLight"
-                        android:textColor="@color/black">
+                        android:background="@color/red"
+                        android:textColor="@color/white">
                     </TextView>
 
                 </LinearLayout>
@@ -132,4 +132,5 @@
         </LinearLayout>
 
     </LinearLayout>
-</RelativeLayout>
+
+</LinearLayout>
