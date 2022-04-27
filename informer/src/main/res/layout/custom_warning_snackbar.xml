@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyRounded.MaterialComponents.MaterialAlertDialog"
+        android:orientation="vertical"
+        android:background="@color/yellow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/yellow"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="46dp"
+                    android:background="@color/yellow"
+                    android:padding="5dp"
+                    android:src="@drawable/warning"></ImageView>
+                <TextView
+                    android:id="@+id/successTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Warning !"
+                    android:gravity="center_horizontal"
+                    android:padding="12sp"
+                    android:textSize="16sp"
+                    android:background="@color/yellow"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvViewError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="VIEW"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

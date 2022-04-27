@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/red"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:background="@color/red"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="46dp"
+                android:padding="5dp"
+                android:src="@drawable/error"/>
+            <TextView
+                android:id="@+id/successTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Important Alert"
+                android:gravity="center_horizontal"
+                android:padding="12sp"
+                android:textSize="16sp"
+                android:textColor="@color/white">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvViewError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="VIEW"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+
+        </TextView>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

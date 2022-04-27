@@ -32,4 +32,31 @@
         android:layout_height="wrap_content">
 
     </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:text="SHOW SUCCESS SNACKBAR"
+        android:id="@+id/btnShowSuccessSnackBar"
+        android:layout_height="wrap_content">
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:text="SHOW ERROR Snackbar"
+        android:id="@+id/btnErrorSnackBar"
+        android:layout_height="wrap_content">
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:text="SHOW WARNING SNACKBAR"
+        android:id="@+id/btnWarningSnackbar"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
 </LinearLayout>

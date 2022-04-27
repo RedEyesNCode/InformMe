@@ -44,7 +44,24 @@ public class MainActivity extends AppCompatActivity {
                 redEyesNCode.intiateWarningDialog(MainActivity.this,"Warning !","This is sample warning message !",true,true);
             }
         });
-
+        binding.btnShowSuccessSnackBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redEyesNCode.showSuccessSnackBar(binding.getRoot(),"SUCCESS SNACK BAR",false);
+            }
+        });
+        binding.btnErrorSnackBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redEyesNCode.showErrorSnackBar(binding.getRoot(),"RETROFIT_ERROR_PLEASE_TRY_AGAIN",false);
+            }
+        });
+        binding.btnWarningSnackbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                redEyesNCode.showWarningSnackBar(binding.getRoot(),"THIS IS A SAMPLE WARNING FROM SNACKBAR",false);
+            }
+        });
 
 
 

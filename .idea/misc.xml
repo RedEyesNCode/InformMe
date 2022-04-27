@@ -6,9 +6,12 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="informer/src/main/res/drawable/background_button_dialog.xml" value="0.1945" />
         <entry key="informer/src/main/res/layout/common_dialog_box.xml" value="0.35625" />
-        <entry key="informer/src/main/res/layout/common_dialog_box_error.xml" value="0.5" />
+        <entry key="informer/src/main/res/layout/common_dialog_box_error.xml" value="0.25" />
         <entry key="informer/src/main/res/layout/common_dialog_box_success.xml" value="0.33" />
         <entry key="informer/src/main/res/layout/common_dialog_box_warning.xml" value="0.5" />
+        <entry key="informer/src/main/res/layout/custom_error_snackbar.xml" value="0.33" />
+        <entry key="informer/src/main/res/layout/custom_success_snackbar.xml" value="0.35625" />
+        <entry key="informer/src/main/res/layout/custom_warning_snackbar.xml" value="0.2125" />
       </map>
     </option>
   </component>

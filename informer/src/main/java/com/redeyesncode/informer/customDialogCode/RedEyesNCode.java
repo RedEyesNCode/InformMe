@@ -3,10 +3,15 @@ package com.redeyesncode.informer.customDialogCode;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.res.Resources;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.core.content.res.ResourcesCompat;
+
+import com.google.android.material.snackbar.Snackbar;
 import com.redeyesncode.informer.R;
 
 public class RedEyesNCode {
@@ -112,5 +117,98 @@ public class RedEyesNCode {
         dialog.dismiss();
     }
 
+    public void  showSuccessSnackBar(View view,String successMessage, boolean isLong){
+
+        Snackbar snackbar;
+        if(isLong){
+            snackbar = Snackbar.make(view,successMessage,Snackbar.LENGTH_LONG);
+
+        }else {
+            snackbar = Snackbar.make(view,successMessage,Snackbar.LENGTH_SHORT);
+        }
+
+        //Steps to create a custom snack bar.. first get the simple snackbar object from snackbar.show()
+        // Get the snackBar layout and hide the textview inside the snackbar layout
+        // TextView textView = (TextView) layout.findViewById(android.support.design.R.id.snackbar_text); [Not Supported Now]
+        Snackbar.SnackbarLayout layout = (Snackbar.SnackbarLayout) snackbar.getView();
+
+        TextView textView = layout.findViewById(com.google.android.material.R.id.snackbar_text);
+        //Hiding the default snackbar textView.
+        textView.setVisibility(View.INVISIBLE);
+
+        //Loading our custom view
+        View snackView = LayoutInflater.from(snackbar.getContext()).inflate(R.layout.custom_success_snackbar,null);
+
+
+        layout.setPadding(0,0,0,0);
+
+        layout.addView(snackView);
+
+        snackbar.show();
+
+
+
+
+
+
+    }
+    public void showErrorSnackBar(View view, String errorMessage, boolean isLong){
+        Snackbar snackbar;
+        if(isLong){
+            snackbar = Snackbar.make(view,errorMessage,Snackbar.LENGTH_LONG);
+
+        }else {
+            snackbar = Snackbar.make(view,errorMessage,Snackbar.LENGTH_SHORT);
+        }
+        Snackbar.SnackbarLayout layout = (Snackbar.SnackbarLayout) snackbar.getView();
+        TextView textView = layout.findViewById(com.google.android.material.R.id.snackbar_text);
+        textView.setVisibility(View.INVISIBLE);
+        View snackView = LayoutInflater.from(snackbar.getContext()).inflate(R.layout.custom_error_snackbar,null);
+        TextView viewError = (TextView) snackView.findViewById(R.id.tvViewError);
+        viewError.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intiateErrorDialog(context,"Error !",errorMessage,true,true);
+                snackbar.dismiss();
+            }
+        });
+
+
+        layout.setPadding(0,0,0,0);
+
+        layout.addView(snackView);
+
+        snackbar.show();
+
+
+
+
+
+    }
+    public void showWarningSnackBar(View view,String warningMessage, boolean isLong){
+        Snackbar snackbar;
+        if(isLong){
+            snackbar = Snackbar.make(view,warningMessage,Snackbar.LENGTH_LONG);
+
+        }else {
+            snackbar = Snackbar.make(view,warningMessage,Snackbar.LENGTH_SHORT);
+        }
+        Snackbar.SnackbarLayout layout = (Snackbar.SnackbarLayout) snackbar.getView();
+        TextView textView = layout.findViewById(com.google.android.material.R.id.snackbar_text);
+        textView.setVisibility(View.INVISIBLE);
+        View snackView = LayoutInflater.from(snackbar.getContext()).inflate(R.layout.custom_warning_snackbar,null);
+        TextView viewError = (TextView) snackView.findViewById(R.id.tvViewError);
+        viewError.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intiateWarningDialog(context,"Warning !",warningMessage,true,true);
+                snackbar.dismiss();
+            }
+        });
+        layout.setPadding(0,0,0,0);
+        layout.addView(snackView);
+
+        snackbar.show();
+    }
 
 }

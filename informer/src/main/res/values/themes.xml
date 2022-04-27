@@ -12,6 +12,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="snackbarStyle">@style/MyRoundSnackbar</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="RoundedCornersDialog" parent="@style/Theme.MaterialComponents.Dialog">
@@ -26,5 +27,8 @@
     <style name="ShapeAppearanceOverlay.App.CustomDialog.Rounded" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">5dp</item>
+    </style>
+    <style name="MyRoundSnackbar" parent="@style/Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">8dp</item>
     </style>
 </resources>
