@@ -1,5 +1,5 @@
 # PickMe
-This Libary helps you show common Dialog's & Snackbar's According to your needs. Ready to use in Any Project,
+**This Libary helps you show common Dialog's & Snackbar's According to your needs. Ready to use in Any Project**
 #### This Libary is under constant Updates.
 
 ## Features
