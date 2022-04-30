@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        RedEyesNCode redEyesNCode = new RedEyesNCode(MainActivity.this);
+            RedEyesNCode redEyesNCode = new RedEyesNCode(MainActivity.this);
         //Created the default libary module and Added. The libary in the local of the Sample Project itself.
         binding.btnShowSuccessDialog.setOnClickListener(new View.OnClickListener() {
             @Override

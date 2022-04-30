@@ -48,3 +48,14 @@
 
 ------------
 
+##### Usage
+
+For showing the SuccessDialog
+``redEyesNCode.initiateSuccessDialog(MainActivity.this,"Success !","This is a success dialog",false,false);``
+For showing the ErrorDialog
+``redEyesNCode.intiateErrorDialog(MainActivity.this,"Error !","This is a sample error Message !",true,true);``
+For showing the Warning
+``redEyesNCode.intiateWarningDialog(MainActivity.this,"Warning !","This is sample warning message !",true,true);``
+
+**The Same Goes for the snackbars** see the MainActivity.java code & you will get there ;)
+
