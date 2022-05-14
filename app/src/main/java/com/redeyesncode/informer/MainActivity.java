@@ -8,17 +8,27 @@ import android.view.View;
 import com.redeyesncode.informer.customDialogCode.RedEyesNCode;
 import com.redeyesncode.informer.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RedEyesNCode.onClicks {
 
     private ActivityMainBinding binding;
 
+    @Override
+    public void onPositive() {
+        //CODE TO RUN WHEN CLICKED ON POSITIVE BUTTON
+
+    }
+
+    @Override
+    public void onNegative() {
+//CODE TO RUN WHEN CLICKED ON NEGATIVE BUTTON
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-            RedEyesNCode redEyesNCode = new RedEyesNCode(MainActivity.this);
+            RedEyesNCode redEyesNCode = new RedEyesNCode(MainActivity.this,this);
         //Created the default libary module and Added. The libary in the local of the Sample Project itself.
         binding.btnShowSuccessDialog.setOnClickListener(new View.OnClickListener() {
             @Override

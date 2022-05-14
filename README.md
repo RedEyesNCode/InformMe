@@ -1,4 +1,4 @@
-# PickMe
+# Inform Me
 **This Libary helps you show common Dialog's & Snackbar's According to your needs. Ready to use in Any Project**
 #### This Libary is under constant Updates.
 
@@ -58,4 +58,9 @@ For showing the Warning
 ``redEyesNCode.intiateWarningDialog(MainActivity.this,"Warning !","This is sample warning message !",true,true);``
 
 **The Same Goes for the snackbars** see the MainActivity.java code & you will get there ;)
+
+### Release Notes
+- **1.0** Intial Release of the Project / Libary
+- **1.1** Added the option to make Interactive dialog boxes, with click listener in the parent activity.
+
 

@@ -17,6 +17,7 @@ import com.redeyesncode.informer.R;
 public class RedEyesNCode {
     private  Context context;
     private Dialog dialog;
+    private onClicks onClicks;
 
 
     public RedEyesNCode(Context context) {
@@ -25,6 +26,43 @@ public class RedEyesNCode {
         dialog = new Dialog(context, R.style.RoundedCornersDialog);
 
     }
+    public RedEyesNCode(Context context,onClicks onClicks) {
+        this.context = context;
+        this.dialog = dialog;
+        this.onClicks = onClicks;
+        dialog = new Dialog(context, R.style.RoundedCornersDialog);
+
+    }
+
+    public void intitateInteractiveDialog(Context context,String messageTitle,String message, String optionOneText, String optionTwoText,boolean isCancelable){
+        dialog.setContentView(R.layout.common_dialog_box_error);
+        dialog.setCancelable(isCancelable);
+        dialog.setCanceledOnTouchOutside(isCancelable);
+        dialog.show();
+        LinearLayout btnPositive, btnNegative;
+        btnPositive = dialog.findViewById(R.id.btnPositive);
+        btnNegative = dialog.findViewById(R.id.btnNegative);
+        btnNegative.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onClicks.onNegative();
+            }
+        });
+        btnPositive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onClicks.onPositive();
+            }
+        });
+    }
+    public interface onClicks{
+        void onPositive();
+        void onNegative();
+
+    }
+
+
+
     public void intiateErrorDialog(Context context,String errorTitle, String message, boolean isCancelable, boolean isCancelableOutsideTouch){
         dialog.setContentView(R.layout.common_dialog_box_error);
         dialog.setCancelable(isCancelable);
