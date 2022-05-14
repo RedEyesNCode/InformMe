@@ -48,8 +48,7 @@
 
 
 #####  Add the dependency inside the android project
-            	        implementation 'com.github.RedEyesNCode:InformMe:1.0
-
+    implementation 'com.github.RedEyesNCode:InformMe:Tag'
 ------------
 
 ##### Usage
