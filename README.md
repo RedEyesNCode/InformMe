@@ -2,6 +2,10 @@
 **This Libary helps you show common Dialog's & Snackbar's According to your needs. Ready to use in Any Project**
 #### This Libary is under constant Updates.
 
+### Release Notes
+- **1.0** Intial Release of the Project / Libary
+- **1.1** Added the option to make Interactive dialog boxes, with click listener in the parent activity.
+
 ## Features
 - Make Custom Dialogs of three Types : Success , Error, Warning with the Custom Messages.
 -  Make Custom SnackBars of Three Types : Success, Error, Warning with Custom Message of Error And Warning Snackbar showed in the dialog box upon the click of the button
@@ -59,8 +63,6 @@ For showing the Warning
 
 **The Same Goes for the snackbars** see the MainActivity.java code & you will get there ;)
 
-### Release Notes
-- **1.0** Intial Release of the Project / Libary
-- **1.1** Added the option to make Interactive dialog boxes, with click listener in the parent activity.
+
 
 
